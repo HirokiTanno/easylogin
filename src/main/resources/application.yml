@@ -1,0 +1,22 @@
+spring:
+  thymeleaf:
+    cache: false
+  jmx:
+    enabled: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot1?serverTimezone=Asia/Tokyo
+    username: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml s
+  type-aliases-package: jp.co.internous.easylogin.model.domain
+  configuration:
+    map-Underscore-To-Camel-Case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+  
+
+
+
